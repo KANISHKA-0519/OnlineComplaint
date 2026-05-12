@@ -30,7 +30,7 @@ const TrackComplaint = () => {
       } else if (status === 404) {
         toast.error(msg || "Complaint not found");
       } else if (!error.response) {
-        toast.error("Cannot reach server. Is the backend running on port 5000?");
+        toast.error("Cannot reach server. Is the backend running?");
       } else {
         toast.error(msg || "Failed to fetch complaint");
       }

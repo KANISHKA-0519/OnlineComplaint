@@ -21,7 +21,7 @@ const PublicDashboard = () => {
         setStats(data);
       } catch (error) {
         if (!error.response) {
-          toast.error("Failed to fetch public stats. Is backend running on http://localhost:5000 ?");
+          toast.error("Failed to fetch public stats. Is the backend running?");
           return;
         }
         toast.error(error.response?.data?.message || `Failed to fetch public stats (HTTP ${error.response.status})`);
